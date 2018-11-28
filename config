@@ -14,7 +14,8 @@ set $mod Mod4
 #startup programms
 exec --no-startup-id thunderbird
 exec --no-startup-id nm-applet
-exec --no-startup-id firefox -new-tab https://calendar.google.com/calendar/r?tab=wc
+exec --no-startup-id firefox -new-tab https://calendar.google.com/calendar/r?tab=wc -new-tab https://www.wunderlist.com/webapp#/
+
 
 #tab throught screens 
 bindsym $mod+Tab workspace next
@@ -139,7 +140,7 @@ bindsym $mod+F4 exec amixer scontrols | grep -oE "'.*'" | awk -F\' \
  '{print "amixer -c 0 set \""$2"\" unmute 100"}' | sh
 
 #Set Display birghtness
-bindsym $mod+F5 exec xbacklight -dec 10%
+bindsym $mod+F5 exec xbacklight -dec 5%
 bindsym $mod+F6 exec xbacklight -inc 10%
 
 #System Lock
